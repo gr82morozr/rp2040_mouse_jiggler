@@ -112,7 +112,7 @@ void setup() {
   usb_hid.setBootProtocol(HID_ITF_PROTOCOL_MOUSE);
   usb_hid.setPollInterval(1);
   usb_hid.setReportDescriptor(desc_hid_report, sizeof(desc_hid_report));
-  usb_hid.setStringDescriptor("RP2040 Mouse Jiggler");
+  usb_hid.setStringDescriptor("Logitech USB Optical Mouse");
   usb_hid.begin();
 
   if (!TinyUSBDevice.isInitialized()) {

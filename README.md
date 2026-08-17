@@ -6,6 +6,7 @@ FreeRTOS, and Adafruit TinyUSB.
 ## Features
 
 - Enumerates as a standard USB HID mouse with no custom driver required.
+- Uses the Logitech USB Optical Mouse identity (`046D:C077`) for private testing.
 - Moves the pointer by one pixel every 60 seconds.
 - Chooses up, right, down, or left using the RP2040 hardware random generator.
 - Sends an opposite movement report to return the pointer to its original position.
@@ -19,6 +20,9 @@ FreeRTOS, and Adafruit TinyUSB.
 - USB data cable
 
 The onboard WS2812 RGB LED uses GPIO 16.
+
+> **Note:** USB vendor ID `046D` is assigned to Logitech. Do not distribute this
+> firmware or represent the device as an authentic Logitech product.
 
 ## Build
 
